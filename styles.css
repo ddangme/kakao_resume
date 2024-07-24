@@ -1,13 +1,127 @@
 body {
-    font-family: Noto Sans KR, sans-serif;
+    font-family: 'Noto+Sans+KR', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 header {
     background: #F4B4B4;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #F4B4B4;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+a {
+    color: #F4B4B4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #F4B4B4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.info {
+    margin-left: 30px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        padding: 3px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    ul li {
+        padding: 2px 0;
+    }
 }
